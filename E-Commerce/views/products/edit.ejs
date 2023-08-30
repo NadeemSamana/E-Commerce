@@ -1,0 +1,33 @@
+<% layout('layouts/boilerplate') -%>
+
+<div class="row newform">
+
+    <div class="col-6 mx-auto">
+
+        <form action="/products/<%= products.id %>?_method=patch" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="products name" name="name" value="<%= products.name %>">
+            </div>
+            <div class="mb-3">
+                <label for="img" class="form-label">img</label>
+                <input type="text" class="form-control" id="img" placeholder="image URL" name="img" value="<%= products.img %>">
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">price</label>
+                <div class="input-group">
+                    <span class="input-group-text">$</span>
+                    <input type="number" class="form-control" id="price" placeholder="products price" name="price" value="<%= products.price %>">
+                </div>
+            <div class="mb-3">
+                <label for="desc" class="form-label">description</label>
+                <textarea class="form-control" name="desc" id="desc" cols="30" rows="5"><%= products.desc %></textarea>
+            </div>
+            </div>
+            <button type="submit" class="btn btn-primary">save</button>
+        </form>
+
+    </div>
+
+</div>
+
