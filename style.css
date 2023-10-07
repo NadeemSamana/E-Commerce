@@ -1,0 +1,63 @@
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+.container{
+    border: 2px solid black;
+    width: 80%;
+}
+
+.parent{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 95%; 
+
+}
+
+.child-1{
+    display: flex;
+    width: 40%;
+}
+
+.child-2{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    align-items: center;
+}
+
+.val{
+    border: 1px solid black;
+    height: 15px;
+}
+
+.text{
+    font-size: xx-large;
+}
+
+button{
+    color: white;
+    background-color: blue;
+}
+
+
+.btn{
+    background-color: grey;
+}
+
+.action{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden{
+    display: block;
+}
+
+.hideable{
+    display: none;
+}
+
+
